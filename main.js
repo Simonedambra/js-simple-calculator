@@ -1,25 +1,12 @@
 'use strict'
 
-const clicknumeri = document.querySelectorAll('button.numeri')
+const buttonrow = document.querySelector('.numbers')
+buttonrow.addEventListener('click', function (e) {
+    let valore = (e.target.innerHTML);
+    let numeri = parseInt(valore)
+    console.log(numeri);
 
-console.log(clicknumeri);
-for (let i = 0; i < clicknumeri.length; i++) {
-    clicknumeri[i].addEventListener('click', function () {
-        let result = document.getElementById('result');
-        let num = [parseInt(clicknumeri[i].innerText)];
-        parseInt(clicknumeri[i].innerText);
-        result.innerHTML = ['']
-        parseInt(result)
-        result.innerHTML += [num]
-
-
-
-        console.log(num)
-
-    });
-
-}
-
+})
 
 
 
