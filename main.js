@@ -1,12 +1,12 @@
 'use strict'
 let risultato = document.querySelector('#result')
-let somma = []
-
+let somma = 0;
 const buttonrow = document.querySelector('.numbers')
 buttonrow.addEventListener('click', function (e) {
+
     let valore = (e.target.innerHTML);
     let numeri = parseInt(valore)
-    somma.push += (numeri);
+    somma += numeri;
 
     console.log(somma)
     risultato.innerText = (somma)
